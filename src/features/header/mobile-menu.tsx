@@ -27,9 +27,11 @@ const Menu = styled.div<{ $openClose: boolean }>`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 17px;
+    padding: 16px 20px 10px;
     border-bottom: 1px solid #e9e9e9;
-    margin-bottom: 1rem;
+    img {
+      width: 11.5rem;
+    }
   }
 
   .Menu-items {
@@ -41,7 +43,7 @@ const Menu = styled.div<{ $openClose: boolean }>`
     justify-content: start;
     align-items: center;
     border-bottom: 1px solid #e9e9e9;
-    padding: 15px 0;
+    padding: 0.9375rem 0;
     background: #fff;
     width: 100%;
     &:last-child {

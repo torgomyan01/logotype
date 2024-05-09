@@ -5,16 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './app/store.js';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <Provider store={store}>
-    <LocalizationProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </LocalizationProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   </Provider>
 );
 

@@ -52,7 +52,7 @@ function Header() {
           </IconButton>
           <img src={logo} alt="Logo Site" />
           <HeaderSearch />
-          <div className="opacity-0" />
+          <div className="opacity-0" style={{ width: 40 }} />
         </div>
       </HeaderBlock>
       <MobileMenu openClose={mobileMenu} onClose={closeMobileMenu} />
