@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     GetPosts().then(({ data }) => {
-      dispatch(setProducts(data));
+      setTimeout(() => dispatch(setProducts(data)), 2000); // This for beautiful animation :)
     });
   }, []);
 
