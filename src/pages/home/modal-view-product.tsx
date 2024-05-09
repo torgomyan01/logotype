@@ -64,19 +64,22 @@ function ModalViewProduct({ product, open, handleClose }: IThisProps) {
       onClose={handleClose}
       aria-labelledby="alert-dialog-title"
       aria-describedby="alert-dialog-description">
-      <DialogTitle>{product?.title}</DialogTitle>
-      <IconButton
-        aria-label="close"
-        onClick={handleClose}
-        sx={{
-          position: 'absolute',
-          right: 15,
-          top: 15,
-          color: '#000',
-          fontSize: 18
-        }}>
-        <i className="icon-close" />
-      </IconButton>
+      <DialogTitle className="d-flex justify-content-between align-items-start">
+        {product?.title}
+        <IconButton
+          aria-label="close"
+          onClick={handleClose}
+          sx={{
+            // position: 'absolute',
+            // right: 15,
+            // top: 15,
+            color: '#000',
+            fontSize: 18
+          }}>
+          <i className="icon-close" />
+        </IconButton>
+      </DialogTitle>
+
       <DialogContent className="pt-0">
         <ProductItem>
           <img
