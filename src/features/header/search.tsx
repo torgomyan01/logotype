@@ -45,10 +45,9 @@ const InputFon = styled.div<{ $openClose: boolean }>`
   backdrop-filter: blur(2px);
   transition: 0.3s;
   z-index: ${({ $openClose }) => ($openClose ? '1' : '-13')};
-  padding-top: 11.6875rem;
+  padding-top: 4.6875rem;
 
   @media (max-width: 768px) {
-    padding-top: 4.6875rem;
     .container {
       margin: 0 10px;
       width: calc(100% - 20px);
@@ -78,12 +77,10 @@ function HeaderSearch() {
 
   const openCloseSearch = () => {
     setHandleSearch(!handleSearch);
-    document.body.classList.add('overflow-hidden');
   };
   const closeSearching = () => {
     setHandleSearch(false);
     setResultSearching([]);
-    document.body.classList.remove('overflow-hidden');
     if (input.current) {
       input.current.value = '';
     }
