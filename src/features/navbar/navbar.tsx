@@ -13,7 +13,7 @@ const NavMenu = styled.div<{ $fix: boolean }>`
   align-items: center;
   position: sticky;
   top: ${({ $fix }) => ($fix ? '0' : '-3.59375rem')};
-  background: #fff;
+  background: ${({ $fix }) => ($fix ? '#fff' : 'transparent')};
   transition: 0.3s;
   @media (max-width: 576px) {
     display: none;
